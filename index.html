@@ -1,36 +1,274 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-<header>
-    <div class="nav">
-    
-    <h1> Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page "$OTR:/SCMTMS/UI_CMN/FORWARDING_ORDER" 
-    </h1>
-    <div class="div">
-     <button>save</button>
-     <button>cancel</button>
-     <button>Edit</button>
-     <button>Save Draft</button>
-     <button>Load Draft</button>
-     <button>Undo</button>
-     <button>Redo</button>
-     <button>Check</button>
-     <button>Adicional Funcitions</button>
+    <header>
+        <div class="nav">
+
+            <h1> Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page "$OTR:/SCMTMS/UI_CMN/FORWARDING_ORDER"
+            </h1>
+            <div class="div">
+                <button>save</button>
+                <button>cancel</button>
+                <button>Edit</button>
+                <button>Save Draft</button>
+                <button>Load Draft</button>
+                <button>Undo</button>
+                <button>Redo</button>
+                <button>Check</button>
+                <button>Adicional Funcitions</button>
+            </div>
+        </div>
+    </header>
+
     </div>
-</div>
-</header>
 
-<div class="azul">
+    <div class="flex">
+        <div>
+            <div class="navigation">
 
-   <div class="amarelo"></div> 
+                <div class="flex">
+                    <h2>Navigation</h2>
+                    <div></div>
+                    <h2>Repositories</h2>
+                </div>
+                <div class="buttons">
+                    <button>🌞 New</button>
+                    <button>🗑️</button>
+                    <button>📄</button>
+                    <button disabled>Up</button>
+                    <button>Down</button>
+                    <button>👤</button>
+                </div>
+            </div>
+
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page Type</th>
+                        <th>Page Id</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Initial Page</td>
+                        <td>INIT</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>MAIN</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>MAIN_FAST_EI</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>MAIN_FAST_EL</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>ADDRESS_DE</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>ACT_LIST</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>NOTE_HLP</td>
+                        <td>$OTR/BOFU</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>SEC_FILING_R</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>SEC_FILING_C</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>REPACT_NOTE</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>REPACT_ATF</td>
+                        <td>$OTR/SCMT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Overview Page Schema</h2>
+            <div class="toolbar">
+                <button>Page Master Area</button>
+                <button>Section</button>
+                <button>UIBB</button>
+                <button>Up</button>
+                <button>Down</button>
+                <button class="configure">Configure UIBB</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Component</th>
+                        <th>Config ID</th>
+                        <th>Window Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Section: SECTION_1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>UIBB: $OTR:/SCMTMS/UL-...</td>
+                        <td>FPM_FORM_UIBB_GL2</td>
+                        <td>/SCMTMS/WDCC_FWO_GEN</td>
+                        <td>FORM_WINDOW</td>
+                    </tr>
+                    <tr class="highlighted">
+                        <td>UIBB: $OTR:/SCMTMS/UL-...</td>
+                        <td>FPM_FORM_UIBB_GL2</td>
+                        <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                        <td>FORM_WINDOW</td>
+                    </tr>
+                    <tr>
+                        <td>UIBB: $OTR:/SCMTMS/UL-...</td>
+                        <td>FPM_TABBED_UIBB</td>
+                        <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                        <td>TABBED_WINDOW</td>
+                    </tr>
+                    <tr>
+                        <td>UIBB: $OTR:/SCMTMS/UL-...</td>
+                        <td>FPM_TREE_UIBB</td>
+                        <td>/SCMTMS/WDCC_DOC_FLOW</td>
+                        <td>TREE_WINDOW</td>
+                    </tr>
+                    <tr>
+                        <td>UIBB: $OTR:/SCMTMS/UL-...</td>
+                        <td>FPM_TABBED_UIBB</td>
+                        <td>/SCMTMS/WDCC_TCM_CHARGES_TA</td>
+                        <td>TABBED_WINDOW</td>
+                    </tr>
+                </tbody>
+           
+           <div class="container">
+           
+            </table>
+                <h2>Atributos de UIBB: $OTR:/SCMTMS/UI_CMN/ADM_INFO</h2>
+                <table>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Window Name</td>
+                        <td><input type="text" value="FORM_WINDOW"></td>
+                    </tr>
+                    <tr>
+                        <td>Config ID</td>
+                        <td><input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA"></td>
+                    </tr>
+                    <tr>
+                        <td>Instance ID</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Column</td>
+                        <td><input type="number" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Row Number</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Sequence Index</td>
+                        <td>
+                            <select>
+                                <option>Visible</option>
+                                <option>Hidden and Excluded from Event Loop</option>
+                                <option>Hidden but Processed in Event Loop (Technical)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hidden Element</td>
+                        <td>
+                            <select>
+                                <option>Visible</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td><input type="text" value="$OTR:/SCMTMS/UI_CMN/ADM_INFO"></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Padding</td>
+                        <td>
+                            <select>
+                                <option>Automatic (Default)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Explanation Text</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Explanation Document</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Default Edit Page</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Default Details Page</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     
-</div>
-
+    </div>
 
 </body>
+
 </html>
